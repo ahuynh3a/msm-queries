@@ -3,6 +3,14 @@ class DirectorsController < ApplicationController
     render({:template => "director_templates/list"})
   end
 
+  def youngest
+    render({:template => "director_templates/youngest"})
+  end
+
+  def eldest
+    render({:template => "director_templates/eldest"})
+  end
+
   def show
     the_id = params.fetch("the_id")
 
